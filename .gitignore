@@ -24,6 +24,7 @@ __pycache__/
 _local/
 _archive/
 .lh/
+.history/
 
 # installers / archives
 *.zip
