@@ -1,0 +1,18 @@
+# Lightweight local development placeholder.
+# Expand this later when backend, migrations, and environment setup are ready.
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: transfer_finder_postgres
+    environment:
+      POSTGRES_USER: transfer_finder
+      POSTGRES_PASSWORD: transfer_finder
+      POSTGRES_DB: transfer_finder
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
